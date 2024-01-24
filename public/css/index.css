@@ -1,0 +1,354 @@
+:root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(225, 100%, 98%);
+    --clr-neutral-250: hsl(225, 100%, 81%);
+    --clr-neutral-400: hsl(223, 23%, 55%, 1);
+    --clr-neutral-800: hsl(223 47% 23%);
+
+    --clr-primary-200: hsl(225, 100%, 94%);
+    --clr-primary-250: hsla(244, 93%, 88%, 0.39);
+    --clr-primary-300: hsl(245, 83%, 68%, 1);
+    --clr-primary-400: hsl(245, 75%, 52%);
+
+    --clr-anime-100: hsla(51, 100%, 50%, 0.493);
+    --clr-anime-200: hsl(51, 100%, 50%);
+    --clr-anime-300: hsla(90, 100%, 50%, 0.993);
+
+    --fs-700: 1.75rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+
+    --fw-400: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    --fsty-italic: italic;
+    --fsty-filter-drop-shadow-1: drop-shadow(0 0 0.25rem hsla(0, 0%, 0%, 0.7));
+    --fsty-filter-drop-shadow-2: drop-shadow(0 0 0.75rem var(--clr-neutral-200));
+    --fsty-filter-drop-shadow-3: drop-shadow(0 0 1.95rem hsla(51, 100%, 50%, 0.693));
+
+    --space-025: 0.25rem;
+    --space-050: 0.50rem;
+    --space-075: 0.75rem;
+    --space-1: 1rem;
+    --space-2: 1.25rem;
+    --space-3: 1.5rem;
+
+    --ts-1: 1px 1.95px 2px hsla(0, 0%, 0%, 0.262);
+    --bs-1: 0 0 10px 0 hsla(0, 0%, 0%, 0.207);
+}
+
+/* Box Sizing Rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove Default Margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove List Styles on ul, ol elements with a  */
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set Core Body Defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    font-family: "Red Hat", sans-serif;
+    font-size: var(--fs-400);
+    font-weight: var(--fw-400);
+    /* 26 / 16 .... found in the Figma Design App */
+    line-height: 1.6;
+    color: var(--clr-neutral-400);
+    background: var(--clr-primary-200);
+
+    /* For Demo Only */
+    /* display: grid;
+    min-height: 100vh;
+    place-items: center; */
+}
+
+.header {
+    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-050) var(--space-3);
+    background: var(--clr-primary-250);
+    box-shadow: var(--bs-1);
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: var(--ts-1);
+}
+
+h1 {
+    color: var(--clr-primary-400);
+}
+
+.header-aside {
+    padding: var(--space-2) var(--space-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    align-items: center;
+}
+
+/* index */
+.header-btn-index {
+    padding: var(--space-050) var(--space-1);
+    min-width: 125px;
+    border-radius: 7px;
+    background: var(--clr-primary-300);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
+    text-transform: uppercase;
+    filter: var(--fsty-filter-drop-shadow-1);
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-anchor-index {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--clr-neutral-800);
+}
+
+.header-btn-index:hover,
+.header-btn-index:focus,
+.btn-anchor-index:hover,
+.btn-anchor-index:focus {
+    background: var(--clr-neutral-400);
+    color: var(--clr-neutral-250);
+}
+
+.header-btn-index:active {
+    filter: var(--fsty-filter-drop-shadow-3);
+}
+
+.btn-anchor-index:active {
+    color: var(--clr-anime-100);
+}
+
+/* index-2 */
+.header-btn-index-2 {
+    padding: var(--space-050) var(--space-1);
+    min-width: 125px;
+    border-radius: 7px;
+    background: var(--clr-primary-300);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
+    text-transform: uppercase;
+    filter: var(--fsty-filter-drop-shadow-1);
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-anchor-index-2 {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--clr-neutral-800);
+}
+
+.header-btn-index-2:hover,
+.header-btn-index-2:focus,
+.btn-anchor-index-2:hover,
+.btn-anchor-index-2:focus {
+    background: var(--clr-neutral-400);
+    color: var(--clr-neutral-250);
+}
+
+.header-btn-index-2:active {
+    filter: var(--fsty-filter-drop-shadow-3);
+}
+
+.btn-anchor-index-2:active {
+    color: var(--clr-anime-100);
+}
+
+/* index_start */
+.header-btn-start {
+    padding: var(--space-050) var(--space-1);
+    min-width: 125px;
+    border-radius: 7px;
+    background: var(--clr-primary-300);
+    font-weight: var(--fw-700);
+    font-size: var(--fs-300);
+    text-transform: uppercase;
+    filter: var(--fsty-filter-drop-shadow-1);
+    letter-spacing: 0.2em;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-anchor-start {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--clr-neutral-800);
+}
+
+.header-btn-start:hover,
+.header-btn-start:focus,
+.btn-anchor-start:hover,
+.btn-anchor-start:focus {
+    background: var(--clr-neutral-400);
+    color: var(--clr-neutral-250);
+}
+
+.header-btn-start:active {
+    filter: var(--fsty-filter-drop-shadow-3);
+}
+
+.btn-anchor-start:active {
+    color: var(--clr-anime-100);
+}
+
+@container style(--theme: dark) {
+    .card {
+        background: black;
+        color: white;
+    }
+}
+
+.primary-content,
+.cards {
+    container-type: inline-size;
+}
+
+
+main {
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 760px) {
+    main {
+        grid-template-columns: 1fr 300px;
+    }
+}
+
+.card {
+    display: grid;
+    gap: 1rem;
+}
+
+.card h2 {
+    font-size: clamp(1.5rem, 7cqi, 3rem);
+}
+
+html {
+    container-type: inline-size;
+}
+
+@container (min-width: 45ch) {
+    .card {
+        grid-template-columns: auto minmax(25ch, 1fr);
+    }
+
+    .card h2 {
+        grid-column: 1 / -1;
+    }
+}
+
+
+@layer demo {
+    body {
+        /* padding-block: 2rem; */
+        color: #fff;
+        background-color: rebeccapurple;
+        margin: 0;
+        font-family: system-ui;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: .25rem;
+    }
+
+    .wrapper {
+        width: min(100% - 3rem, 1200px);
+        margin-inline: auto;
+    }
+
+    .cards {
+        display: grid;
+        gap: 1.5rem;
+        height: 100vh;
+        align-content: start;
+    }
+
+    .card {
+        background-color: #fff;
+        color: #222;
+        border-radius: 4px;
+        box-shadow: 0 15px 15px rgb(0 0 0 / .25);
+        padding: .75rem;
+    }
+
+    .card>* {
+        margin: 0;
+    }
+}

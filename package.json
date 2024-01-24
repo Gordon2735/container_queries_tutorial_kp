@@ -1,0 +1,13 @@
+{
+	"name": "container_queries_tutorial_kp",
+	"version": "1.0.0",
+	"description": "Container Queries are going to change how we make layouts",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "live-server --port=9080 --browser=CHROME --open=public/views/index.html",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Gordon R Mullen Jr <webelistics@gmail.com>",
+	"license": "MIT"
+}
