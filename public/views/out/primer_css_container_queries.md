@@ -30,8 +30,6 @@
 -   Or, developers may be using certain CSS grid and flex behaviors to approximate container responsiveness. But [flex and CSS grid solutions](https://moderncss.dev/container-query-solutions-with-css-grid-and-flexbox/) are restricted to only loosely defining layout adjustments from horizontal to vertical arrangements, and don’t address the need to modify other properties.
 
 -   Container queries move us beyond considering only the viewport, and allow any component or element to respond to a defined container’s width. So while you may still use a responsive grid for overall page layout, a component within that grid can define its own changes in behavior by querying its container. Then, it can adjust its styles depending on whether it’s displayed in a narrow or wide container.
-    <br>
-    <br>
 
 ![Alt text](image-1.png)
 
@@ -40,10 +38,8 @@
 #### ![Alt text](image-2.png) [Container queries move us beyond considering only the viewport, and allow any component or element to respond to a defined container’s width.](https://twitter.com/share?text=%0a%20Container%20queries%20move%20us%20beyond%20considering%20only%20the%20viewport,%20and%20allow%20any%20component%20or%20element%20to%20respond%20to%20a%20defined%20container%e2%80%99s%20width.%0a&url=https://smashingmagazine.com%2f2021%2f05%2fcomplete-guide-css-container-queries%2f)
 
 -   With container queries, you’ll be able to define a component’s full range of styles in a very precise and predictable way. Perhaps you want to increase or decrease padding, change font sizes, add or remove background images, or completely change the display property and orientation of child elements.
-    <br>
-    <br>
 
-[![Alt text](image-3.png)](https://i.vimeocdn.com/video/1133055837-592e4f0f527d79cd71c31794206ebb61ad3593301cdeb70e6a08e3b22f15914e-d.webp?mw=1100&mh=1019&q=70)
+[![Alt text](image-3.png)](https://i.vimeocdn.com/video/1133055837-592e4f0f527d79cd71c31794206ebb61ad3593301cdeb70e6a08e3b22f15914e-d.webp?mw=1100&mh=619&q=70)
 We’ll look at more examples soon, but first let’s learn how to create a container query!
 
 ### **Getting Started With CSS Container Queries**
